@@ -1,6 +1,7 @@
 # app/crud.py
 from sqlalchemy.orm import Session
-from app.models import MiningPoint, Deposit, Mineral
+from .models import MiningPoint, Deposit, Mineral
+
 
 # CRUD для пунктов
 def create_point(db: Session, name: str, staff_count: int, capacity: float):
