@@ -1,6 +1,5 @@
-from sqlalchemy.orm import Session
-fom app.database import SessionLocal, engine
-from app.models import Base, MiningPoint, Deposit, Mineral
+from .database import SessionLocal, engine
+from .models import Base, MiningPoint, Deposit, Mineral
 
 # Создание таблиц, если их нет
 Base.metadata.create_all(bind=engine)
