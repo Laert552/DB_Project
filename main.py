@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from app.database import SessionLocal, engine
 from app.models import Base
 from app.crud import create_point, get_points, create_deposit, get_deposits, create_mineral, get_minerals
-from scripts import init_db
+from scripts.init_db import init_db
 from app.populate_db import populate_data
 
 # Создание таблицw

@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 # app/crud.py
 from sqlalchemy.orm import Session
 from .models import MiningPoint, Deposit, Mineral
